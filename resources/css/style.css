@@ -1,0 +1,22 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/*Header*/
+
+header {
+  background-color: black;
+}
+
+header span {
+  margin: .66rem 0;
+  color: white;
+}
+
+.logo {
+  height: 1.5rem;
+  width: auto;
+  margin-left: .5rem;
+  margin-right: 1rem;
+}
