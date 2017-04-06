@@ -3,10 +3,20 @@ html {
   font-family: Helvetica;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /*Header*/
 
 header {
   background-color: black;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
 }
 
 header span {
@@ -28,6 +38,9 @@ header span {
   width: 100%;
   background-image: url("../images/moto.jpeg");
   background-size: cover;
+}
+
+.hero .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,12 +73,12 @@ header span {
 
 /*Nav*/
 
-nav {
+ul {
   display: flex;
   justify-content: space-between;
 }
 
-nav li {
+ul li {
   list-style: none;
   margin: .75rem 0;
 }
@@ -77,28 +90,34 @@ nav li {
 
 /*Products*/
 
-.products {
+.products .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .product-list {
   display: flex;
-  justify content: space-between;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
 }
 
 .product-item {
   display: flex;
   flex-direction: column;
   width: 30%;
-  border: 1px solid black;
 }
 
-.product-item img {
+.product-image {
   height: 9rem;
-  width: auto;
-  margin: 2rem auto;
+  padding: 2rem 0;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8rem;
 }
 
 .product-item h3 {
@@ -112,9 +131,36 @@ nav li {
 .information {
   display: flex;
   justify-content: space-between;
+  margin: 3rem 0 4rem 0;
 }
 
 .info {
   display: flex;
   flex-direction: column;
+  width: 35%;
 }
+
+.info h3 {
+  color: white;
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.info span {
+  padding-top: 5px;
+}
+
+/*Footer*/
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+}
+ /*Media Queries */
+
+ @media only screen and (max-width: 1024px) {
+   body {
+     font-size: 16px;
+   }
+ }
