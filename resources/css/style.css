@@ -164,8 +164,8 @@ footer {
 }
  /*Media Queries */
 
- @media only screen and (max-width: 1024px) {
-   body {
+ @media only screen and (max-width: 1024px) /*and (min-width: 471px)*/ {
+   html {
      font-size: 16px;
    }
 
@@ -186,3 +186,59 @@ footer {
      display: none;
    }
  }
+
+@media only screen and (max-width: 470px) {
+  html {
+    font-size: 18px;
+  }
+
+  .hero {
+    height: 15rem;
+  }
+
+  .hero-feature {
+    height: 5rem;
+    width: 100%;
+    margin-top: 10rem;
+
+  }
+
+  .hero-feature h3, h4 {
+    margin-left: 3rem;
+  }
+
+  .hero-feature h3 {
+    font-size: .77rem;
+  }
+
+  .hero-feature h4 {
+    font-size: 1rem;
+  }
+
+  .product-list {
+    justify-content: center;
+  }
+
+  .product-item {
+    width: 90%;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .information {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 90%;
+    margin: .5rem 0;
+  }
+
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+  }
+}
