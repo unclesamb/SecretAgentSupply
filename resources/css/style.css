@@ -73,19 +73,24 @@ header span {
 
 /*Nav*/
 
-ul {
+nav ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: .75rem 0;
 }
 
 ul li {
-  list-style: none;
-  margin: .75rem 0;
+
 }
 
 .navigation {
   background-color: firebrick;
   color: white;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 /*Products*/
@@ -162,5 +167,22 @@ footer {
  @media only screen and (max-width: 1024px) {
    body {
      font-size: 16px;
+   }
+
+   .mobile-nav {
+     display: block;
+     text-align: center;
+   }
+
+   .regular-nav {
+     display: none;
+   }
+
+   .product-item {
+     width: 47%;
+   }
+
+   .glasses {
+     display: none;
    }
  }
